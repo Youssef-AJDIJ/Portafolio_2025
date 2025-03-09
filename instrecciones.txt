@@ -1,3 +1,4 @@
-git commit -m "Actualización de index.html y style.css"
+git add . ====> para añadir la Actualización 
+git commit -m "Actualización de index.html y style.css" 
 git push origin main
-Remove-Item -Force .git\index.lock
+Remove-Item -Force .git\index.lock ====> para eliminar el error 
