@@ -1,0 +1,438 @@
+:root {
+    --primary-color: #2a5298;
+    --secondary-color: #f0f0f0;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --light-text: #fff;
+    --dark-bg: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), #1c3d80);
+    color: var(--light-text);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.contact-info {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.contact-item i {
+    margin-right: 0.5rem;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+ /*  ------------------ seccion de maquinas ------------------ */
+ #video-destacado{
+    width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.205);
+    border-radius: 12px;
+    overflow: hidden;
+ }
+
+
+.showcase-video {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-video video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.showcase-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.showcase-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.showcase-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+.machine-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.machine-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.machine-card:hover {
+    transform: translateY(-5px);
+}
+
+.machine-info {
+    padding: 1.5rem;
+}
+
+.machine-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.machine-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+.machine-title {
+    font-size: 1.25rem;
+    margin: 1rem;
+    color: #333;
+}
+
+.machine-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 1rem 1rem;
+    line-height: 1.4;
+    flex: 1; /* Permite que la descripción ocupe el espacio restante */
+}
+
+.machine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.machine-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.machine-card:hover {
+    transform: translateY(-5px);
+}
+
+.machine-video {
+    position: relative;
+    padding-top: 56.25%;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.machine-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  ------------------ seccion de experiencia ------------------ */
+#experiencia {
+   padding: 1rem;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-left: -1.5px; */
+}
+
+.timeline-item {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -1rem;
+    background-color: var(--primary-color);
+    border: 4px solid #fff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content:nth-child(even)::after {
+    left: -1rem;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    position: relative;
+    border-radius: 6px;
+}
+
+.timeline-date {
+    font-size: 1rem;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.timeline-title {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+/* ------------------ seccion de formacion ------------------ */
+#formacion{
+    padding: 1rem;
+}
+#formacion .skill-list {
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/* ------------------ seccion de habilidades ------------------ */
+#habilidades{
+    padding: 1rem;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.skill-list {
+    list-style-type: none;
+}
+
+.skill-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skill-list li::before {
+    content: '•';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+/* ------------------ seccion de footer ------------------ */
+
+footer {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* ------------------ seccion de permisos y idiomas ------------------ */
+.permisosIdioma{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    
+}
+#idiomas,#permisos {
+    padding: 1rem;
+    margin-bottom: 0px;
+    
+}
+
+/* --------------- Media queries para responsividad ------------- */
+@media (max-width: 662px) {
+    #video-destacado {
+        padding: 0px;
+    }
+    #maquinas .showcase-content h2 {
+        margin: 0 auto;
+        font-size: xx-large;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+.timeline-item{
+    display: flex; 
+    left: 0;
+    width: 100%;
+    justify-content: space-between; 
+}
+.timeline-item:nth-child(even){
+    left: 0;
+}
+.timeline-image{
+    width: 50%;
+    height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8rem 0 ;
+    padding: 0 0.5rem;
+}
+
+.timeline-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width:1071px){
+    .timeline-item {
+        width: 100%;
+    }
+    .timeline::after {
+        content: none;
+    }
+    .timeline-content{
+        margin-bottom: 2rem;
+    }
+    .timeline-content::after {
+        content: none;
+    }
+    .timeline-item::after {
+        content: none;
+    }
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    #video-destacado {
+        width: 100%;
+    }
+    .timeline-item{
+        display: block;
+    }
+    .timeline-image img{
+        display: none;
+    }
+}
